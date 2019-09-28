@@ -1,10 +1,11 @@
 {
-  "name": "demo",
+  "name": "ali-fc-typescript-skeleton",
   "version": "1.0.0",
   "scripts": {
     "test": "mocha --require espower-typescript/guess \"test/**/*.test.ts\"",
     "dev": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "local": "fun local invoke demo/demo"
   },
   "description": "",
   "devDependencies": {
@@ -22,6 +23,6 @@
     "webpack-cli": "^3.3.2",
     "webpack-merge": "^4.2.1"
   },
-  "author": "",
+  "author": "jeff.tian@outlook.com",
   "license": "MIT"
 }
