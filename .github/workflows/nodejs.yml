@@ -28,17 +28,17 @@ jobs:
         CI: true
     - name: Prepare release
       run: |
-        mkdir -p release/{{ projectName }}
-        cp -r README.md release/{{ projectName }}/README.md
-        cp -r package-lock.json release/{{ projectName }}/package-lock.json
-        cp -r template.yml release/{{ projectName }}/template.yml
-        cp -r webpack.common.js release/{{ projectName }}/webpack.common.js
-        cp -r package.json release/{{ projectName }}/package.json
-        cp -r test release/{{ projectName }}/test
-        cp -r webpack.dev.js release/{{ projectName }}/webpack.dev.js
-        cp -r src release/{{ projectName }}/src
-        cp -r tsconfig.json release/{{ projectName }}/tsconfig.json
-        cp -r webpack.prod.js release/{{ projectName }}/webpack.prod.js
+        mkdir -p release/"{{ projectName }}"
+        cp -r README.md release/"{{ projectName }}"/README.md
+        cp -r package-lock.json release/"{{ projectName }}"/package-lock.json
+        cp -r template.yml release/"{{ projectName }}"/template.yml
+        cp -r webpack.common.js release/"{{ projectName }}"/webpack.common.js
+        cp -r package.json release/"{{ projectName }}"/package.json
+        cp -r test release/"{{ projectName }}"/test
+        cp -r webpack.dev.js release/"{{ projectName }}"/webpack.dev.js
+        cp -r src release/"{{ projectName }}"/src
+        cp -r tsconfig.json release/"{{ projectName }}"/tsconfig.json
+        cp -r webpack.prod.js release/"{{ projectName }}"/webpack.prod.js
     - name: Deploy
       uses: docker://peaceiris/gh-pages:v2.3.1
       env:
