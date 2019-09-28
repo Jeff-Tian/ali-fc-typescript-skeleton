@@ -22,6 +22,8 @@ jobs:
         npm install
         npm run build --if-present
         npm test
+      env:
+        CI: true
     - name: Prepare release
       run: |
         mkdir -p release/{{ projectName }}
@@ -43,5 +45,3 @@ jobs:
         PUBLISH_DIR: ./release
       with:
         emptyCommits: true
-      env:
-        CI: true
