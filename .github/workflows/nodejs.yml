@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        ref: master
     - name: npm install, build, and test
       run: |
         node -v
@@ -39,6 +40,11 @@ jobs:
         cp -r src release/"{{ projectName }}"/src
         cp -r tsconfig.json release/"{{ projectName }}"/tsconfig.json
         cp -r webpack.prod.js release/"{{ projectName }}"/webpack.prod.js
+        cp -r .babelrc release/"{{ projectName }}"/babelrc
+        cp -r .gitignore release/"{{ projectName }}"/gitignore
+        cp -r .vscode release/"{{ projectName }}"/vscode
+
+        cp -r README.md release/README.md
     - name: Deploy
       uses: docker://peaceiris/gh-pages:v2.3.1
       env:
