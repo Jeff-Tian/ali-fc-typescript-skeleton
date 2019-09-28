@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "inlineSourceMap": false,
-    "lib": [
-      "dom",
-      "es5",
-      "scripthost",
-      "es2015.promise"
-    ]
+    "moduleResolution": "node",
+    "allowJs": true,
+    "lib": ["dom", "es5", "scripthost", "es2015.promise"]
   }
 }
