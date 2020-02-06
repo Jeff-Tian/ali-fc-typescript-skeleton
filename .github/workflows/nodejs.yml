@@ -45,6 +45,7 @@ jobs:
           cp -r .vscode release/"{{ projectName }}"/.vscode
 
           cp -r README.md release/README.md
+          mkdir -p release/.github
           cp -r .github/FUNDING.yml release/.github/FUNDING.yml
       - name: Deploy
         uses: docker://peaceiris/gh-pages:v2.3.1
