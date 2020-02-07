@@ -2,6 +2,8 @@
 
 > 阿里云函数计算 TypeScript 开发模板/项目骨架。适合开发微服务/Restful API/简易 Web 应用。
 
+## 特性
+
 - 语言：TypeScript
 - 运行时：nodejs 10
 - 代码打包：webpack
