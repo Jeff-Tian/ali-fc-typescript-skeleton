@@ -5,7 +5,8 @@
     "test": "mocha --require espower-typescript/guess \"test/**/*.test.ts\"",
     "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "local": "fun local invoke demo/demo"
+    "local": "fun local invoke demo/demo",
+    "encrypt-env:windows": "(certutil.exe -encodehex .env env 1 && type env | clip.exe) && del env"
   },
   "description": "",
   "devDependencies": {

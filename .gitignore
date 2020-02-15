@@ -12,4 +12,5 @@ jdt.ls-java-project
 .history
 .Trash-*
 .env
+env
 dist
