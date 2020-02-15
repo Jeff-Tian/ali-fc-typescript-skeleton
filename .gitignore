@@ -11,3 +11,5 @@ jdt.ls-java-project
 **/docs/api
 .history
 .Trash-*
+.env
+dist
