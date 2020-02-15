@@ -1,3 +1,4 @@
 *.txt text eol=lf
 *.yaml text eol=lf
 .* text eol=lf
+*.yml text eol=lf
